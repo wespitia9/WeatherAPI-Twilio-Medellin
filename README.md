@@ -1,2 +1,4 @@
-# WeatherAPI-Twilio-Medellin
-Repositorio educativo donde utilizo Python para integrar la API de WeatherAPI y Twilio, creando un sistema que envía notificaciones climáticas por SMS. Este proyecto refleja mi aprendizaje en el manejo de APIs, automatización de tareas y desarrollo de soluciones prácticas en un contexto real.
+# Automatización de Notificaciones Climáticas
+
+Este proyecto fue desarrollado como parte de un proceso de aprendizaje enfocado en integrar servicios web y automatizar tareas utilizando Python como lenguaje principal. A lo largo del desarrollo, se exploraron conceptos clave relacionados con el uso de APIs RESTful, la gestión de credenciales y la comunicación mediante SMS. A continuación, se detalla cada uno de los aspectos que abarca este proyecto y cómo contribuye a dicho proceso de aprendizaje:
+
