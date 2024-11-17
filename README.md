@@ -36,7 +36,6 @@ Este proyecto fue desarrollado como parte de un proceso de aprendizaje enfocado 
 - Herramienta clave para el desarrollo iterativo, organización de código y visualización de resultados.
 - Documentación oficial de [Jupyter Notebook](https://jupyter-notebook.readthedocs.io/en/stable/)
 
-Nota: Este proyecto no solo tiene fines educativos, sino que también puede adaptarse fácilmente a escenarios reales, como servicios personalizados para empresas, aplicaciones móviles, o sistemas de monitoreo climático.
 
 # Descripción del Flujo de Trabajo
 
@@ -49,6 +48,35 @@ Nota: Este proyecto no solo tiene fines educativos, sino que también puede adap
 
 ## Automatización de Tareas
 - Se configuró un sistema de envío automatizado de notificaciones SMS mediante Twilio, que incluyó:
-    - La gestión de credenciales sensibles (como el **account_sid** y **auth_token*) mediante un archivo **.env*.
+    - La gestión de credenciales sensibles (como el **account_sid** y **auth_token**) mediante un archivo **.env**.
     - La configuración de un número de teléfono desde Twilio como remitente.
     - El envío de mensajes personalizados, incluyendo los datos climáticos relevantes.
+
+## Análisis y Filtrado de Datos
+- Se procesaron los datos climáticos para seleccionar únicamente la información relevante para el usuario:
+    - Filtrado por rangos horarios de interés (por ejemplo, entre 12:00 PM y 6:00 PM).
+    - Extracción de variables como:
+        - Condición climática: Descripciones como "Partly Cloudy" o "Light Rain".
+        - Probabilidad de lluvia: Indicado en porcentajes.
+        - Temperatura: En grados Celsius.
+
+# Envío de Notificaciones
+
+El mensaje SMS enviado incluye un resumen compacto de los datos procesados.
+
+# Pasos para usar este repositorio:
+
+- Paso 1: Clonar repositorio:
+    - git clone https://github.com/wespitia9/WeatherAPI-Twilio-Medellin.git
+
+- Paso 2: Instalación en un entorno Conda
+    - Crear un nuevo entorno Conda: conda create --name weatherapi-twilio python=3.11.10 -y
+    - Activar el entorno: conda activate weatherapi-twilio
+    - Instalar las dependencias desde el archivo requirements: pip install -r requirements.txt
+    - Crea un archivo .env con las credenciales necesarias:
+        - WEATHER_API_KEY=tu_clave_de_weatherapi
+        - TWILIO_ACCOUNT_SID=tu_account_sid
+        - TWILIO_AUTH_TOKEN=tu_auth_token
+        - PHONE_NUMBER=+1234567890
+
+Este repositorio refleja un proceso de aprendizaje personal y sirve como base para cualquier persona interesada en la automatización de notificaciones utilizando APIs y Python. No solo tiene fines educativos, sino que también puede adaptarse fácilmente a escenarios reales, como servicios personalizados para empresas, aplicaciones móviles o sistemas de monitoreo climático. Es un ejemplo claro de cómo integrar servicios en la nube con herramientas de análisis y procesamiento de datos.
