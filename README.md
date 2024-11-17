@@ -70,7 +70,7 @@ El mensaje SMS enviado incluye un resumen compacto de los datos procesados.
     - git clone https://github.com/wespitia9/WeatherAPI-Twilio-Medellin.git
 
 - Paso 2: Instalación en un entorno Conda
-    - Crear un nuevo entorno Conda: conda create --name weatherapi-twilio python=3.11.10 -y
+    - Crear un nuevo entorno Conda: `conda create --name weatherapi-twilio python=3.11.10 -y`
     - Activar el entorno: conda activate weatherapi-twilio
     - Instalar las dependencias desde el archivo requirements: pip install -r requirements.txt
     - Crea un archivo .env con las credenciales necesarias:
