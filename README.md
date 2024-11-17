@@ -44,7 +44,7 @@ Este proyecto fue desarrollado como parte de un proceso de aprendizaje enfocado 
     - Construcción de URLs dinámicas: Incorporando parámetros como la ciudad, número de días y alertas.
     - Manejo de solicitudes HTTP: Usando la librería requests para enviar peticiones GET.
     - Procesamiento de datos JSON: Transformando los datos de la API en estructuras manejables como DataFrames.
-    - Ejemplo de URL generada: `http://api.weatherapi.com/v1/forecast.json?key=tu_api_key&q=Medellin&days=1&aqi=no&alerts=no`
+    - Ejemplo de URL generada: http://api.weatherapi.com/v1/forecast.json?key=tu_api_key&q=Medellin&days=1&aqi=no&alerts=no
 
 ## Automatización de Tareas
 - Se configuró un sistema de envío automatizado de notificaciones SMS mediante Twilio, que incluyó:
@@ -67,7 +67,7 @@ El mensaje SMS enviado incluye un resumen compacto de los datos procesados.
 # Pasos para usar este repositorio:
 
 - Paso 1: Clonar repositorio:
-    - git clone `https://github.com/wespitia9/WeatherAPI-Twilio-Medellin.git`
+    - git clone https://github.com/wespitia9/WeatherAPI-Twilio-Medellin.git
 
 - Paso 2: Instalación en un entorno Conda
     - Crear un nuevo entorno Conda: `conda create --name weatherapi-twilio python=3.11.10 -y`
