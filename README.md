@@ -13,14 +13,14 @@ Este proyecto fue desarrollado como parte de un proceso de aprendizaje enfocado 
 ## Python:
 - El lenguaje base para la integración de servicios web, análisis de datos y automatización.
 - La versión utilizada fue 3.11.10, seleccionada por su compatibilidad con las librerías más recientes.
-- Documentación oficial [Python 3.11](https://docs.python.org/3.11/)
-- Librerías utilizadas
-    - pandas==2.0.3
+- Librerías utilizadas para la creación del archivo ´requirements.txt´
+    - '''pandas==2.0.3'''
     - requests==2.31.0
     - tqdm==4.64.1
     - python-dotenv==1.0.0
     - beautifulsoup4==4.12.2
     - twilio==7.18.0
+- Documentación oficial [Python 3.11](https://docs.python.org/3.11/)
 
 ## WeatherAPI:
 - Una API RESTful que proporciona datos climáticos en tiempo real, pronósticos y alertas.
